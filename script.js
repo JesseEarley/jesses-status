@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             try {
                 const response = await fetch(url);
                 const data = await response.json();
-                document.getElementById('status').textContent = data.message;
-                document.getElementById('updated').textContent = `Last updated: ${data.updated}`;
+                document.getElementById('Status').textContent = data.message;
+                document.getElementById('Updated').textContent = `Last updated: ${data.updated}`;
             } catch (error) {
                 document.getElementById('status').textContent = "Couldn't load status.";
             }
