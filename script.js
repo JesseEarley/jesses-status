@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-        const url = 'https://raw.githubusercontent.com/jesseearley/jesses-status/main/status.json';
+const url = `https://raw.githubusercontent.com/jesseearley/jesses-status/main/status.json?t=${new Date().getTime()}`;
 
         async function getStatus() {
             try {
